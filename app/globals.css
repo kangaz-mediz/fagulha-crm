@@ -26,25 +26,28 @@
 
 /* ─────────────────────────────────────────────────────────────────────────
    DeskcommCRM — Design System tokens (Sage palette · density Aerada)
+   Fagulha CRM: superfícies, texto, bordas e neutros trocados pelos do Fagulha
+   (azulados). A RAMPA do acento continua a do upstream: o laranja do Fagulha
+   entra pela Marca da instalação (APP_ACCENT_HEX), que deriva a rampa em runtime.
    Source of truth: /app/design/lib/tokens.ts (PALETTES.sage)
    Light + dark drawn separately (NOT inverted).
    ───────────────────────────────────────────────────────────────────────── */
 
 :root {
   /* Surfaces (light) */
-  --color-bg: #faf9f6;
+  --color-bg: #eef0f5;
   --color-surface: #ffffff;
-  --color-surface-elevated: #f5f3ee;
-  --color-overlay: rgba(28, 26, 22, 0.42);
+  --color-surface-elevated: #f4f5f9;
+  --color-overlay: rgba(21, 24, 39, 0.42);
 
   /* Text (light) */
-  --color-text: #1c1a16;
-  --color-text-muted: #5d594f;
-  --color-text-subtle: #7d786c;
+  --color-text: #151827;
+  --color-text-muted: #5d6378;
+  --color-text-subtle: #6b7189;
 
   /* Borders (light) */
-  --color-border: #e7e3da;
-  --color-border-strong: #d2cdbf;
+  --color-border: #d5d9e4;
+  --color-border-strong: #c3c8d6;
 
   /* Accent — Sage (11 stops) */
   --color-accent-50: #f3f6f1;
@@ -64,17 +67,17 @@
   --color-accent-hover: var(--color-accent-700);
 
   /* Neutrals — greige (11 stops, light) */
-  --color-neutral-50: #faf9f6;
-  --color-neutral-100: #f3f1ec;
-  --color-neutral-200: #e7e3da;
-  --color-neutral-300: #d2cdbf;
-  --color-neutral-400: #a9a395;
-  --color-neutral-500: #7d786c;
-  --color-neutral-600: #5d594f;
-  --color-neutral-700: #46433b;
-  --color-neutral-800: #2e2c26;
-  --color-neutral-900: #1c1a16;
-  --color-neutral-950: #0e0d0a;
+  --color-neutral-50: #f6f7fa;
+  --color-neutral-100: #eef0f5;
+  --color-neutral-200: #d5d9e4;
+  --color-neutral-300: #c3c8d6;
+  --color-neutral-400: #8b92ab;
+  --color-neutral-500: #6b7189;
+  --color-neutral-600: #5d6378;
+  --color-neutral-700: #3e4357;
+  --color-neutral-800: #262a3a;
+  --color-neutral-900: #151827;
+  --color-neutral-950: #0b0d16;
 
   /* States (light) */
   --color-success: #5a8a5f;
@@ -263,30 +266,30 @@
    (lib/branding/css.ts), que só ganha consumidor com a tela de marca.
    ───────────────────────────────────────────────────────────────────────── */
 [data-theme="light"] {
-  --color-bg: #faf9f6;
+  --color-bg: #eef0f5;
   --color-surface: #ffffff;
-  --color-surface-elevated: #f5f3ee;
-  --color-overlay: rgba(28, 26, 22, 0.42);
-  --color-text: #1c1a16;
-  --color-text-muted: #5d594f;
-  --color-text-subtle: #7d786c;
-  --color-border: #e7e3da;
-  --color-border-strong: #d2cdbf;
+  --color-surface-elevated: #f4f5f9;
+  --color-overlay: rgba(21, 24, 39, 0.42);
+  --color-text: #151827;
+  --color-text-muted: #5d6378;
+  --color-text-subtle: #6b7189;
+  --color-border: #d5d9e4;
+  --color-border-strong: #c3c8d6;
   --color-accent: var(--color-accent-600);
   --color-accent-fg: #ffffff;
   --color-accent-soft: var(--color-accent-100);
   --color-accent-hover: var(--color-accent-700);
-  --color-neutral-50: #faf9f6;
-  --color-neutral-100: #f3f1ec;
-  --color-neutral-200: #e7e3da;
-  --color-neutral-300: #d2cdbf;
-  --color-neutral-400: #a9a395;
-  --color-neutral-500: #7d786c;
-  --color-neutral-600: #5d594f;
-  --color-neutral-700: #46433b;
-  --color-neutral-800: #2e2c26;
-  --color-neutral-900: #1c1a16;
-  --color-neutral-950: #0e0d0a;
+  --color-neutral-50: #f6f7fa;
+  --color-neutral-100: #eef0f5;
+  --color-neutral-200: #d5d9e4;
+  --color-neutral-300: #c3c8d6;
+  --color-neutral-400: #8b92ab;
+  --color-neutral-500: #6b7189;
+  --color-neutral-600: #5d6378;
+  --color-neutral-700: #3e4357;
+  --color-neutral-800: #262a3a;
+  --color-neutral-900: #151827;
+  --color-neutral-950: #0b0d16;
   --color-success: #5a8a5f;
   --color-success-bg: rgba(90, 138, 95, 0.12);
   --color-success-fg: #41673f;
@@ -341,19 +344,19 @@
 
 [data-theme="dark"] {
   /* Surfaces (dark — drawn) */
-  --color-bg: #161510;
-  --color-surface: #1d1c17;
-  --color-surface-elevated: #272620;
+  --color-bg: #12141d;
+  --color-surface: #1b1e2a;
+  --color-surface-elevated: #222637;
   --color-overlay: rgba(0, 0, 0, 0.55);
 
   /* Text (dark) */
-  --color-text: #f5f4ef;
-  --color-text-muted: #8e8b7f;
-  --color-text-subtle: #605e54;
+  --color-text: #eceef6;
+  --color-text-muted: #9ba1b6;
+  --color-text-subtle: #6b7189;
 
   /* Borders (dark) */
-  --color-border: #33312a;
-  --color-border-strong: #444239;
+  --color-border: #2c3042;
+  --color-border-strong: #3a3f55;
 
   /* Accent stays same hex stops; default shifts up for dark contrast */
   --color-accent-50: #f3f6f1;
@@ -368,22 +371,22 @@
   --color-accent-900: #2f3c2b;
   --color-accent-950: #171f15;
   --color-accent: var(--color-accent-400);
-  --color-accent-fg: #161510;
+  --color-accent-fg: #0e1020;
   --color-accent-soft: rgba(130, 160, 119, 0.16);
   --color-accent-hover: var(--color-accent-300);
 
   /* Neutrals — greige (11 stops, dark) */
-  --color-neutral-50: #f5f4ef;
-  --color-neutral-100: #e6e4dc;
-  --color-neutral-200: #bbb8ac;
-  --color-neutral-300: #8e8b7f;
-  --color-neutral-400: #605e54;
-  --color-neutral-500: #444239;
-  --color-neutral-600: #33312a;
-  --color-neutral-700: #272620;
-  --color-neutral-800: #1d1c17;
-  --color-neutral-900: #161510;
-  --color-neutral-950: #0c0b08;
+  --color-neutral-50: #eceef6;
+  --color-neutral-100: #d9dce8;
+  --color-neutral-200: #b4b9cc;
+  --color-neutral-300: #9ba1b6;
+  --color-neutral-400: #6b7189;
+  --color-neutral-500: #3a3f55;
+  --color-neutral-600: #2c3042;
+  --color-neutral-700: #222637;
+  --color-neutral-800: #1b1e2a;
+  --color-neutral-900: #12141d;
+  --color-neutral-950: #0a0b11;
 
   /* States (dark) */
   --color-success: #82a077;
@@ -799,6 +802,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  /* Fagulha CRM: títulos na Bricolage Grotesque, como no app do Fagulha. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display), var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.01em;
   }
 
   code,
