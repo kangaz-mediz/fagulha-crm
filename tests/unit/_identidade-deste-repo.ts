@@ -46,7 +46,11 @@
  * reprova lá. Não remova essa derivação pensando que é redundante — ela é o que
  * torna a âncora não-falsificável de dentro do diff.
  */
-export const NAMESPACE_DESTE_REPO = "ghcr.io/melgarafael";
+// Fagulha CRM: este fork publica as próprias imagens e é a origem do kit.
+export const NAMESPACE_DESTE_REPO = "ghcr.io/kangaz-mediz";
+
+/** Nome do repositório no GitHub (o upstream é `DeskcommCRM`; este fork é `fagulha-crm`). */
+export const NOME_DESTE_REPO = "fagulha-crm";
 
 /**
  * O dono de uma referência `<registry>/<dono>`.
